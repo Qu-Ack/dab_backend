@@ -139,9 +139,7 @@ app.get('/change', function(req,res,next) {
     })
 })
 
-app.post('/income', function(req,res,next) {
-    
-})
+
 
 app.get('/info' , function (req,res,next) {
     let predicted_dab = (dab) + dl;
@@ -181,7 +179,7 @@ cron.schedule('59 11 * * *' , async () => {
 
 
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log("server running ..");
 })
 
