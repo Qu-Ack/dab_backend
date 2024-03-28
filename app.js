@@ -156,7 +156,7 @@ app.get('/info' , function (req,res,next) {
     )
 })
 
-cron.schedule('59 11 * * *' , async () => {
+cron.schedule('3 0 * * *' , async () => {
     const main = new Main({
         DAB: dab,
         DABP: dabp,
