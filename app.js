@@ -156,19 +156,22 @@ app.get('/info' , function (req,res,next) {
     )
 })
 
-cron.schedule('3 0 * * *' , async () => {
+cron.schedule('16 0 * * *' , async () => {
     const main = new Main({
         DAB: dab,
         DABP: dabp,
         expenses: expenses
     })
+    
     await main.save();
+    console.log(dab, dabp , expenses);
     let tmp = dab;
-    dab = dabp + dl;
+    console.log(dl)
+    dab = dab + dl;
     dabp = tmp;
     expenses = 0;
-    
 
+    console.log(dab, dabp , expenses);
     console.log('cron job executed...')
     
 }, {
