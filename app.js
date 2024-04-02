@@ -76,8 +76,8 @@ let changes = new Stack();
 
 
 let daysinmonth = getRemainingDaysInCurrentMonth(); 
-let savingstarget = 300;
-let money = 1657;
+let savingstarget = 800;
+let money = 3337;
 let dl = (money - savingstarget)/daysinmonth;
 let expenses = 0;
 let dabp = 0;
