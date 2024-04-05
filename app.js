@@ -167,7 +167,6 @@ cron.schedule('59 23 * * *' , async () => {
     console.log(dab, dabp , expenses);
     let tmp = dab;
     console.log(dl)
-    dab =  dab + dabp + dl;
     dabp = tmp;
     expenses = 0;
 
